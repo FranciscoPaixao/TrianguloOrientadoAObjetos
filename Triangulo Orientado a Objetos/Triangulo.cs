@@ -22,10 +22,6 @@ namespace Triangulo_Orientado_a_Objetos
             {
                 return true;
             }
-            if (_ladoA <= 0 || _ladoB <= 0 || _ladoC <= 0)
-            {
-                return false;
-            }
             return false;
         }
         public String retornarTipoTriangulo()
