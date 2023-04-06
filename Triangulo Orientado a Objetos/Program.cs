@@ -7,7 +7,7 @@
             double ladoA = 3;
             double ladoB = 2;
             double ladoC = 1;
-            Calculadora calculadora = new Calculadora(ladoA, ladoB, ladoC);
+            Triangulo calculadora = new Triangulo(ladoA, ladoB, ladoC);
             if(calculadora.validaDados()){
                 System.Console.WriteLine("Os dados são validos, o triangulo é " + calculadora.retornarTipoTriangulo());
             }else{
