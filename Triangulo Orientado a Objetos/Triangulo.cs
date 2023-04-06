@@ -5,24 +5,26 @@ using System.Threading.Tasks;
 
 namespace Triangulo_Orientado_a_Objetos
 {
-    public class Calculadora
+    public class Triangulo
     {
         private double _ladoA;
         private double _ladoB;
         private double _ladoC;
 
-        public Calculadora(double ladoA, double ladoB, double ladoC)
+        public Triangulo(double ladoA, double ladoB, double ladoC)
         {
             _ladoA = ladoA;
             _ladoB = ladoB;
             _ladoC = ladoC;
         }
         public bool validaDados(){
-            if(_ladoA <= 0 || _ladoB <= 0 || _ladoC <= 0){
+            if (_ladoA + _ladoB > _ladoC && _ladoA + _ladoC > _ladoB && _ladoB + _ladoC > _ladoA)
+            {
                 return true;
             }
-            if(_ladoA + _ladoB <= _ladoC || _ladoA + _ladoC <= _ladoB || _ladoB + _ladoC <= _ladoA){
-                return true;
+            if (_ladoA <= 0 || _ladoB <= 0 || _ladoC <= 0)
+            {
+                return false;
             }
             return false;
         }

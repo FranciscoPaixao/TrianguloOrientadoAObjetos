@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            double ladoA = 3;
-            double ladoB = 2;
-            double ladoC = 1;
+            double ladoA = 10;
+            double ladoB = 10;
+            double ladoC = 10;
             Triangulo calculadora = new Triangulo(ladoA, ladoB, ladoC);
             if(calculadora.validaDados()){
                 System.Console.WriteLine("Os dados são validos, o triangulo é " + calculadora.retornarTipoTriangulo());
